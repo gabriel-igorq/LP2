@@ -11,13 +11,13 @@ public class Heater{
 		increment = 5;
 	}
 
-	public void Warmer(){
+	public void warmer(){
 		if(temperature+increment < max){
 			temperature = temperature + increment;
 		}
 	}
 
-	public void Cooler(){
+	public void cooler(){
 		if(temperature-increment > min){
 			temperature = temperature - increment;
 		}
