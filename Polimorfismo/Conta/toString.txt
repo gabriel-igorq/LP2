@@ -1,0 +1,4 @@
+Método toString da classe Object:
+
+- Não recebe nenhum parâmetro;
+- Retorna uma representação do objeto em String.
