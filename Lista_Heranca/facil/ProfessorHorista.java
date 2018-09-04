@@ -1,9 +1,9 @@
 public class ProfessorHorista extends Professor{
 
     private int total_horas;
-    private float salario_hora;
+    private String salario_hora;
 
-    public ProfessorHorista(String nome, String matricula, int idade, int total_horas, float salario_hora){
+    public ProfessorHorista(String nome, String matricula, int idade, int total_horas, String salario_hora){
         super(nome, matricula, idade);
         this.total_horas = total_horas;
         this.salario_hora = salario_hora;
@@ -17,15 +17,16 @@ public class ProfessorHorista extends Professor{
         this.total_horas = total;
     }
 
-    public float getSalarioHora(){
+    public String getSalarioHora(){
         return salario_hora;
     }
 
-    public void setSalarioHora(float salario_hora){
+    public void setSalarioHora(String salario_hora){
         this.salario_hora = salario_hora;
     }
 
-    public float Salario(){
-        return salario_hora*total_horas;
+    public int Salario(){
+        int tmp = Integer.parseInt(salario_hora); 
+        return tmp*total_horas;
     }
 }

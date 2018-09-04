@@ -1,7 +1,7 @@
 public class Main{
     public static void main(String[] args ){
         ProfessorRegime regime = new ProfessorRegime("Thanos","20129030", 35, 10000);
-        ProfessorHorista horista = new ProfessorHorista("Samyr", "20109021", 43, 20, 230); 
+        ProfessorHorista horista = new ProfessorHorista("Samyr", "20109021", 43, 20, "230"); 
     
         System.out.println("Dados do Professor Integral:");
         System.out.println("Nome: "+ regime.getNome());
